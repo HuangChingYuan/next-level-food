@@ -6,7 +6,7 @@ export default function MealsFormSubmit() {
   const { isPending } = useActionState();
 
   return (
-    <button disabled={pending}>
+    <button disabled={isPending}>
       {isPending ? "Submitting..." : "Share Meal"}
     </button>
   );
